@@ -11,7 +11,7 @@ GuardDuty Finding 발생 시 Lambda가 자동으로 1차 대응(리소스 격리
 1. VPC 콘솔 → Security Groups → **Create security group**
 2. 이름: `sg-isolation-demo`
 3. **인바운드 규칙: 없음 (기본값 유지)**
-4. **아웃바운드 규칙: 모두 삭제** (기본 아웃바운드 전체 허용 규칙을 제거해야 진짜 격리가 됨)
+4. **아웃바운드 규칙:  없음 (기본값 유지)**
 5. 생성 후 **보안 그룹 ID**를 메모해두기 (예: `sg-0123456789abcdef0`)
 
 #### 2. Lambda 실행 역할(IAM Role)에 권한 추가
