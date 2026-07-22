@@ -76,3 +76,30 @@ Use mutual authentication 체크
 체크하면 나오는 Client certificate ARN: 같은 인증서 선택
 Use user-based authentication: 체크 안 함
 ```
+
+#### 5. Target Network 연결
+1) 방금 만든 Endpoint 클릭 → Target network associations 탭 → Associate target network
+2) VPC 선택 → 서브넷 선택 → Associate target network
+3) State가 Available로 바뀔 때까지 대기
+
+#### 6. Authorization Rule 추가
+1) Authorization rules 탭 → Add authorization rule
+2) Destination network: VPC CIDR (10.0.0.0/16)
+3) Grant access to: Allow access to all users
+4) Add
+
+#### 7. 보안 그룹 ICMP 허용 (ping 테스트용)
+1) VPC 콘솔 → Security Groups
+2) Inbound rules → Edit → Add rule
+3) Type: All ICMP - IPv4, Source: 10.100.0.0/22
+4) Save
+
+#### 8.클라이언트 파일 준비 + 연결
+Endpoint 화면 → Download client configuration
+메모장으로 열기 → 맨 아래 추가:
+<cert>
+(cat pki/issued/client1.domain.tld.crt 내용)
+</cert>
+<key>
+(cat pki/private/client1.domain.tld.key 내용)
+</key>
