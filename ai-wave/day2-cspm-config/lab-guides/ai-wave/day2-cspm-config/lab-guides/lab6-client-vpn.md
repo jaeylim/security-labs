@@ -10,10 +10,18 @@ cd easy-rsa/easyrsa3
 ```
 
 #### 2. ACM에 바로 업로드
+#####서버인증서
 ```
 aws acm import-certificate \
   --certificate fileb://pki/issued/server.crt \
   --private-key fileb://pki/private/server.key \
+  --certificate-chain fileb://pki/ca.crt
+```
+#####클라이언트 인증서
+```
+aws acm import-certificate \
+  --certificate fileb://pki/issued/client1.domain.tld.crt \
+  --private-key fileb://pki/private/client1.domain.tld.key \
   --certificate-chain fileb://pki/ca.crt
 ```
 <img width="800" alt="image" src="https://github.com/user-attachments/assets/f04a06b5-196c-4e5f-988c-93f080f62eea" />
