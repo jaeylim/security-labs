@@ -22,8 +22,8 @@ git --version
    - 없다면: **Edit routes** → **Add route** → Destination `0.0.0.0/0`, Target에서 방금 확인한 IGW 선택 → **Save changes**
 
 #### 0-3. 테스트할 EC2 인스턴스 준비 (연결 확인용)
-- 어제 만든 테스트 인스턴스가 이 VPC에 있다면 그대로 사용 가능
-- 없다면 이 VPC의 서브넷에 t2.micro 인스턴스 하나 새로 생성 (Public IP는 Disable로 둬도 무방)
+- 테스트 인스턴스가 이 VPC에 있다면 그대로 사용 가능
+- 없다면 이 VPC의 서브넷에 t3.micro 인스턴스 하나 새로 생성 (Public IP는 Disable로 둬도 무방)
 - 인스턴스 상세 화면에서 **프라이빗 IPv4 주소**(예: `10.0.1.25`)를 메모장에 적어두기 — 나중에 ping 테스트용
 
 ---
