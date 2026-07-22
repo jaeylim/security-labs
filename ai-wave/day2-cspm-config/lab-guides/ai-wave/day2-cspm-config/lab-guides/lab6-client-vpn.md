@@ -46,6 +46,6 @@ cat pki/ca.crt
 
 #### 3. client 인증서 업로드
 cat pki/issued/client1.domain.tld.crt
-cat pki/private/client1.domain.tld.key
+cat pki/private/client1.domain.tld.key --> 오류 발생시 "cat pki/private/client1.domain.tld.key | tr -d '\r'"
 
 → 나온 내용 그대로 ACM에 또 한 번 Import (본문/키 칸에 붙여넣고 체인은 ca.crt 그대로 재사용).
