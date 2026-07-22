@@ -26,7 +26,7 @@ aws acm import-certificate \
 ```
 <img width="800" alt="image" src="https://github.com/user-attachments/assets/f04a06b5-196c-4e5f-988c-93f080f62eea" />
 
-#####
+##### 22. ACM에 직접 업로드
 1. Certificate body 칸에 붙여넣을 것:
 ```
 bash
