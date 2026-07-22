@@ -16,4 +16,4 @@ aws acm import-certificate \
   --private-key fileb://pki/private/server.key \
   --certificate-chain fileb://pki/ca.crt
 ```
-<img width="500" alt="image" src="https://github.com/user-attachments/assets/f04a06b5-196c-4e5f-988c-93f080f62eea" />
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/f04a06b5-196c-4e5f-988c-93f080f62eea" />
