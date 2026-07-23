@@ -30,12 +30,12 @@ aws acm import-certificate \
 1. Certificate body 칸에 붙여넣을 것:
 ```
 bash
-cat pki/issued/server.crt
+cat pki/issued/server.com.crt
 ```
 2. Certificate private key 칸에 붙여넣을 것:
 ```
 bash
-cat pki/private/server.key
+cat pki/private/server.com.key
 ```
 
 3. Certificate chain 칸에 붙여넣을 것:
