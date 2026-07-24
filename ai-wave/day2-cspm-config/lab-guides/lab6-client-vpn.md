@@ -154,3 +154,18 @@ ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
 • Network settings: (VPN 내부에 생성했던 VPC-Subnet 선택)
 2) (윈도우 기준) 윈도우키+R - "cmd" 입력 후 - [확인] 선택
 3) cmd 창에서 "ping <ec2-privateip>" 입력
+[예시]
+```
+C:\Users\jaeyeonlim>ping 10.0.0.165
+
+Ping 10.0.0.165 32바이트 데이터 사용:
+10.0.0.165의 응답: 바이트=32 시간=5ms TTL=126
+10.0.0.165의 응답: 바이트=32 시간=5ms TTL=126
+10.0.0.165의 응답: 바이트=32 시간=5ms TTL=126
+10.0.0.165의 응답: 바이트=32 시간=6ms TTL=126
+
+10.0.0.165에 대한 Ping 통계:
+    패킷: 보냄 = 4, 받음 = 4, 손실 = 0 (0% 손실),
+왕복 시간(밀리초):
+    최소 = 5ms, 최대 = 6ms, 평균 = 5ms
+```
