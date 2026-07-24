@@ -151,8 +151,8 @@ ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
 • OS: Amazon Linux\
 • Instance type: t3.micro\ 
 • Key pair: (개인키 사용)\
-• Network settings: (VPN 내부에 생성했던 VPC-Subnet 선택)\
-3) (윈도우 기준) 윈도우키+R - "cmd" 입력 후 - [확인] 선택\
+• Network settings: (VPN 내부에 생성했던 VPC-Subnet 선택)
+3) (윈도우 기준) 윈도우키+R - "cmd" 입력 후 - [확인] 선택
 4) cmd 창에서 "ping <ec2-privateip>" 입력\
 
 [예시]
