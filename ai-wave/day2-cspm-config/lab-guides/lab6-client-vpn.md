@@ -94,7 +94,7 @@ Use user-based authentication: 체크 안 함
 3) Type: All ICMP - IPv4, Source: 10.100.0.0/22
 4) Save
 
-#### 8.클라이언트 파일 준비 + 연결
+#### 8. 클라이언트 파일 준비 + 연결
 Endpoint 화면 → Download client configuration
 메모장으로 열기 → 맨 아래 추가:
 ```
@@ -105,3 +105,20 @@ Endpoint 화면 → Download client configuration
 (cat pki/private/client1.domain.tld.key 내용)
 </key>
 ```
+
+[예시]
+```
+<cert>
+-----BEGIN CERTIFICATE-----
+ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+-----END CERTIFICATE-----
+</cert>
+
+<key>
+-----BEGIN PRIVATE KEY-----
+ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+-----END PRIVATE KEY-----
+</key>
+```
+
+#### 9. 
