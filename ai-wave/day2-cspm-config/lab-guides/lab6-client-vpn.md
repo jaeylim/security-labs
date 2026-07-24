@@ -121,4 +121,36 @@ ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
 </key>
 ```
 
-#### 9. 
+#### 9. VPN Client 설치 후, 프로필 추가 및 연결
+1) [VPC] - [Client VPN endpoints] - 상단의 "Client download" 선택 - VPN Client 설치 (개인 랩탑 OS에 맞춰서)
+2) 설치 후 접속해서 상단의 [파일]-[프로필 관리] 선택 후 위 8에서 편집한 .ovpn 파일 추가
+3) 프로필 추가되면 [완료] 선택 후 [연결] 
+4) (윈도우 기준) 윈도우키+R - "cmd" 입력 후 - [확인] 선택
+5) ipconfig 명령어 쳐서 AWS VPN Client 항목 확인
+• 연결 전
+```
+알 수 없는 어댑터 AWS Client VPN TAP-Windows Adapter V9 #1:
+
+   미디어 상태 . . . . . . . . : 미디어 연결 끊김
+   연결별 DNS 접미사. . . . :
+```
+• 연결 후
+```
+알 수 없는 어댑터 AWS Client VPN TAP-Windows Adapter V9 #1:
+
+   연결별 DNS 접미사. . . . :
+   링크-로컬 IPv6 주소 . . . . : fe80::d81f:2ae6:4f22:4a19%4
+   IPv4 주소 . . . . . . . . . : 10.100.1.34
+   서브넷 마스크 . . . . . . . : 255.255.255.224
+   기본 게이트웨이 . . . . . . :
+```   
+
+#### 10. (선택) EC2 생성 후 연결 확인
+1) EC2 임시 생성 (VPN 생성 전 구성했던 네트워크의 VPC내부 Subnet 선택)
+• Name: vpn-ec2
+• OS: Amazon Linux
+• Instance type: t3.micro 
+• Key pair: (개인키 사용)
+• Network settings: (VPN 내부에 생성했던 VPC-Subnet 선택)
+2) (윈도우 기준) 윈도우키+R - "cmd" 입력 후 - [확인] 선택
+3) cmd 창에서 "ping <ec2-privateip>" 입력
