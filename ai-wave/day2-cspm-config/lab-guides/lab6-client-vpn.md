@@ -147,13 +147,14 @@ ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
 
 #### 10. (선택) EC2 생성 후 연결 확인
 1) EC2 임시 생성 (VPN 생성 전 구성했던 네트워크의 VPC내부 Subnet 선택)
-• Name: vpn-ec2
-• OS: Amazon Linux
+• Name: vpn-ec2\
+• OS: Amazon Linux\
 • Instance type: t3.micro 
 • Key pair: (개인키 사용)
 • Network settings: (VPN 내부에 생성했던 VPC-Subnet 선택)
 3) (윈도우 기준) 윈도우키+R - "cmd" 입력 후 - [확인] 선택
 4) cmd 창에서 "ping <ec2-privateip>" 입력
+
 [예시]
 ```
 C:\Users\jaeyeonlim>ping 10.0.0.165
